@@ -11,19 +11,17 @@
 }
 
 body{
+  margin: auto;
   max-width: 1440px;
   background-color: var(--light-gray);
   font-family: 'Outfit', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
 .card{
   width: 335px;
   background-color: var(--white);
-  margin: 100px 20px;
+  margin: 20vh auto;
   border-radius: 20px;
   height: 500px;
 }
