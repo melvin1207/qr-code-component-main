@@ -1,6 +1,6 @@
 pipeline{
   agent any
-  atages{
+  stages{
     stage('Build'){
       steps{
         echo "Etapa build no disponible"
