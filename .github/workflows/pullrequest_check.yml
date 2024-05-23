@@ -2,7 +2,7 @@ name: Notify when a pull request in made to master branch
 on:  
   pull_request:
     branches:
-      - main
+      - prueba1
 jobs:
   build:
     runs-on: ubuntu-latest
