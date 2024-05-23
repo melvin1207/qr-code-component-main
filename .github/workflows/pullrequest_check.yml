@@ -1,12 +1,21 @@
-name: Notify when a pull request in made to master branch
-on:  
-  pull_request:
+name: PR Notification
+
+on:
+  push:
     branches:
-      - prueba1
+    - main
+
 jobs:
-  build:
+  pr-notification:
     runs-on: ubuntu-latest
+    
     steps:
       - uses: actions/checkout@v3
+      - name: Notify when someone creates a pull request on mentioned branches
+        id: notify-on-pr
+        uses: ./
+        with:
+          mobile_no: ${{ secrets.MOBILE_NO }}
       - name: Run
         run: echo 'Sending you notification'
+          
