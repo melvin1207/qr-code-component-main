@@ -11,11 +11,4 @@ jobs:
     
     steps:
       - uses: actions/checkout@v3
-      - name: Notify when someone creates a pull request on mentioned branches
-        id: notify-on-pr
-        uses: ./
-        with:
-          mobile_no: ${{ secrets.MOBILE_NO }}
-      - name: Run
-        run: echo 'Sending you notification'
           
