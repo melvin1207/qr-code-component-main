@@ -7,7 +7,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@prueba1
+      - uses: actions/checkout@master
       - name: Notify when someone creates a pull request on mentioned branches
         id: notify-on-pr
         uses: ./
