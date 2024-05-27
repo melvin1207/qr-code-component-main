@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         AWS_ACCOUNT_ID="374693444425"
-        AWS_DEFAULT_REGION="us-east-1b"
+        AWS_DEFAULT_REGION="us-east-1"
         IMAGE_REPO_NAME="reto3digital"
         IMAGE_TAG="latest"
         REPOSITORY_URI = "374693444425.dkr.ecr.us-east-1.amazonaws.com/reto3digital"
