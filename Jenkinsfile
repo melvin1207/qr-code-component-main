@@ -29,7 +29,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker.build "${IMAGE_REPO_NAME}:${IMAGE_TAG}"
+          dockerImage = docker build -t reto3digital.
         }
       }
     }
@@ -38,8 +38,8 @@ pipeline {
     stage('Pushing to ECR') {
      steps{  
          script {
-                sh """docker tag ${IMAGE_REPO_NAME}:${IMAGE_TAG} ${REPOSITORY_URI}:$IMAGE_TAG"""
-                sh """docker push 374693444425.dkr.ecr.us-east-1.amazonaws.com/reto3digital/${IMAGE_REPO_NAME}:${IMAGE_TAG}"""
+                sh """docker tag reto3digital:latest 374693444425.dkr.ecr.us-east-1.amazonaws.com/reto3digital:latest"""
+                sh """docker push 374693444425.dkr.ecr.us-east-1.amazonaws.com/reto3digital:latest"""
          }
         }
       }
