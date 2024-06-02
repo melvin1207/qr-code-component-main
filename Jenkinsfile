@@ -29,7 +29,7 @@ pipeline {
     stage('Building image') {
       steps{
         script {
-          dockerImage = docker build -t reto3digital.
+          dockerImage = docker.build "reto3digital:latest"
         }
       }
     }
