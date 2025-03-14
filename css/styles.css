@@ -12,23 +12,25 @@
 
 body{
   margin: auto;
-  max-width: 1440px;
+  max-width: auto;
   background-color: var(--light-gray);
   font-family: 'Outfit', sans-serif;
+  height: 1vh;
 }
 
 
 .card{
-  width: 335px;
+  width: 320px;
   background-color: var(--white);
   margin: 20vh auto;
   border-radius: 20px;
-  height: 500px;
+  height: 499px;
 }
 
 .card_content{
     margin: 8px;
     height: 95%;
+
     display: flex;
     flex-direction: column;
     align-items: center;
